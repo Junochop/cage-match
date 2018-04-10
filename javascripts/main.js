@@ -10,7 +10,8 @@ const buildDomString = allpoints => {
     
         domString += `<div id="p1" class="playerdiv">`;
         domString += `<img class="hero-pic" src="${allpoints.gravatar_url}">`;
-        domString += `<p class="hero-name">${allpoints.points.total}</p>`;
+        domString += `<p class="hero-name">${allpoints.name}</p>`;
+        domString += `<p class="hero-point">${allpoints.points.total}</p>`;
         domString += `</div>`;
     
     printToDom(domString, "winner");
@@ -28,7 +29,8 @@ const buildDomString2 = allpoints2 => {
 
     domString += `<div id="p2" class="playerdiv">`;
     domString += `<img class="hero-pic" src="${allpoints2.gravatar_url}"</p>`;
-    domString += `<p class="hero-name">${allpoints2.points.total}</p>`;
+    domString += `<p class="hero-name">${allpoints2.name}</p>`;
+    domString += `<p class="hero-point">${allpoints2.points.total}</p>`;
     domString += `</div>`;
 
     printToDom(domString, "winner2");
@@ -38,7 +40,21 @@ const buildDomString2 = allpoints2 => {
 
  const checkScores = () => {
     const winnerwho = document.getElementsByClassName("playerdiv");
-    console.log("yo", winnerwho.name);
+    for(let i =0; i< winnerwho.length; i++){
+        console.log(winnerwho[1].children[2].innerText);
+        const char1 = winnerwho[0].children[2].innerText;
+        const char2 = winnerwho[1].children[2].innerText;
+        let domString2 = "";
+        if (char1 > char2) {
+            document.getElementById("winnerdisplay").innerHTML = winnerwho[0].children[1].innerText;
+            document.getElementById("winnerdisplay").innerHTML += " Winner!";
+
+        } else {
+            document.getElementById("winnerdisplay").innerHTML = winnerwho[1].children[1].innerText;
+            document.getElementById("winnerdisplay").innerHTML += " Winner!";
+        }
+        
+    }
 
  }
 
