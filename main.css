@@ -1,0 +1,13 @@
+#winnerdisplay {
+    margin: 10px;
+  height: 100px;
+  width:250px;
+  background-color: teal;
+  border: 1px solid black;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  
+
+}
