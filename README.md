@@ -14,4 +14,4 @@ This project shows who has the most points on TeamTreeHouse.
 1. Navigate to *localhost:8080* in your browser
 
 ## Contributors
-[Drake Morrison](https://github.com/Junochop)
+[Juno Lee](https://github.com/Junochop)
