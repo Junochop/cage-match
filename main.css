@@ -8,6 +8,14 @@
   font-weight: bold;
   color: white;
   text-align: center;
-  
 
+
+}
+body {
+    background-color: pink;
+}
+
+winnerbadge {
+  height: 50px;
+  width: 50px;
 }
