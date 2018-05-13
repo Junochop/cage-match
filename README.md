@@ -5,7 +5,7 @@ This project shows who has the most points on TeamTreeHouse.
 
 ## Screenshots
 ### Starting Screen
-![The Home Page]()
+![The Home Page](https://raw.githubusercontent.com/Junochop/cage-match/master/pics/Screen%20Shot%202018-05-13%20at%202.30.26%20PM.png)
 
 ## How To Run
 1. Clone this repo and cd into it
